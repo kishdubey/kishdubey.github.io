@@ -141,7 +141,15 @@
                                 <a href="https://jacobsinstitute.berkeley.edu/student-project/b-print/" target="_blank">b.Print: Desktop Braille Printer</a>
                             </div>
                             <p>
-                                Ample.
+                                b.Print was my final project for the Mechanical Engineering program at UC Berkeley. The task was to create an operational prototype of a smart product, including moving parts, atleast one actuator,
+                                at least one analon and one digital sensor, and a microcontroller with appropriate programming. After doing research on the problem space, my team converged on building a lower cost desktop braille printer. 
+                                
+                                A microcontroller converts a string (like 'hello world') into a matrix of 1's and 0's, then converts that into rotations that it sends to a stepper motor that controls the location of a power screw connected to a 
+                                carriage with a solenoid. Once the solenoid carriage has moved to the first '1', a transistor is powered which punches a dot into the sheet of paper using the solenoid. This continues for one line. Limit switches on 
+                                each side of the carriage detect the end of a line and a temperature sensor monitors for general wellbeing of the system. The microcontroller then powers two stepper motors attached to former printer rollers 
+                                to move the page up one line. The braille printing continues on this next line.
+                                
+                                In the end, we pitched during Demo Day, were selected as a finalist in the "CA Greater Good Design Competition" and were featured on the website of the campus' largest makerspace - Jacobs Hall!
                             </p>
                             
                             <!-- <a
