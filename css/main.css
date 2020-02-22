@@ -74,14 +74,25 @@
 
 /* Make the list of links take up the whole width of the nav */
 
-navbar ul {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
   display: block;
-  width: 100%; }
-
-navbar ul li {
-  
-  width: 16%; }
-
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 html {
     -webkit-box-sizing: border-box;
