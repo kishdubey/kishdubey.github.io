@@ -71,7 +71,7 @@
     font-style: italic;
 }
 
-nav {
+navbar {
 
   width: 100%;
 
@@ -79,11 +79,11 @@ nav {
 
 /* Make the list of links take up the whole width of the nav */
 
-nav ul {
+navbar ul {
 
   width: 100%; }
 
-nav ul li {
+navbar ul li {
 
   width: 16%; }
 
