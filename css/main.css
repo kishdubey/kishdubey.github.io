@@ -70,6 +70,9 @@
     font-weight: 700;
     font-style: italic;
 }
+
+
+
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1041,4 +1044,23 @@ strong {
     opacity: 1;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
+}
+
+
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.6%; /* Six equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
 }
