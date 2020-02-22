@@ -82,7 +82,7 @@ ul {
 }
 
 li {
-  display: inline;
+  display: flex;
 }
 
 li a {
