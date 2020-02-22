@@ -71,24 +71,17 @@
     font-style: italic;
 }
 
-
-/* Make the list of links take up the whole width of the nav */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
-
-li {
+.nav-links {
   display: flex;
 }
-
-li a {
-  color: black;
-  text-align: center;
+.navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 html {
