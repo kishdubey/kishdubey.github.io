@@ -73,11 +73,12 @@
 
 nav {
   width: 100%;
+  display: flex
   background-color: white;
   padding-left: 30px;
   padding-right: 10px;
   padding-top: 30px;
-  display: flex;
+  justify-content: space-between;
 }
 
 .nav-item a {
