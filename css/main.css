@@ -71,43 +71,22 @@
     font-style: italic;
 }
 
-/* Style the navigation menu */
-.navbar {
+nav {
+
   width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
 
-/* Navigation links */
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  width: 16.6%; /* Six equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
-}
+  margin: 20px 0; }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+/* Make the list of links take up the whole width of the nav */
 
-li {
-  float: left;
-}
+nav ul {
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+  width: 100%; }
+
+nav ul li {
+
+  width: 16%; }
+
 
 html {
     -webkit-box-sizing: border-box;
