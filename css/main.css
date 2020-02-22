@@ -75,6 +75,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.nav-item {
+  flex: 1;
+}
+
 .nav-links {
   display: flex;
 }
