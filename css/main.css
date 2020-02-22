@@ -79,7 +79,7 @@ navbar ul {
   width: 100%; }
 
 navbar ul li {
-
+  display: block;
   width: 16%; }
 
 
