@@ -71,28 +71,36 @@
     font-style: italic;
 }
 
-nav {
-  width: 100%;
-  display: flex
-  background-color: white;
-  justify-content: space-between;
+html {
+	box-sizing: border-box;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+*, *:before, *:after {
+	box-sizing: inherit;
 }
-
-.nav-item a {
-  flex: 1;
+.main-wrapper {
+	max-width:1280px;
+	margin:auto;
+	padding:20px;
+	background:#f9f9f9;
 }
-
-.nav-links {
-  list-style: none;
+.nav{
+	display:flex;
 }
-
+.nav ul {
+	margin:0 3rem 0 0;
+	padding:0;
+	list-style:none;
+	display:flex;
+	flex:1 0 0%;
+	justify-content:space-between
+}
+.nav ul a {
+	display:block;
+	padding:5px 10px;
+}
+.nav_login{
+	margin-left:auto;
+}
 
 
 
