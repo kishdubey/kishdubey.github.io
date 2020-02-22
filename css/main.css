@@ -75,11 +75,11 @@
 /* Make the list of links take up the whole width of the nav */
 
 navbar ul {
-
+  display: block;
   width: 100%; }
 
 navbar ul li {
-  display: block;
+  
   width: 16%; }
 
 
