@@ -86,11 +86,11 @@ li {
   float: left;
 }
 
-a {
+li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 8px;
+  padding: 10px 10px 10px 2px;
   text-decoration: none;
 }
 
