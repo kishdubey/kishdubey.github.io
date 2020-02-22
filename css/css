@@ -46,29 +46,3 @@
   src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldXNThLqRwH-OJ1UHjlKGHiw71p5_zaDpwm.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-body {
-
-  width: 100%;
-
-  max-width: 960px;
-
-  margin: 0 auto; }
-
-/* Make the nav take up the whole body width, and give it some top and bottom margin space */
-
-nav {
-
-  width: 100%;
-
-  margin: 20px 0; }
-
-/* Make the list of links take up the whole width of the nav */
-
-nav ul {
-
-  width: 100%; }
-
-nav ul li {
-
-  width: 16.6%; }
