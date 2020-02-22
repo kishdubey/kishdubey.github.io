@@ -87,10 +87,10 @@ li {
 }
 
 li a {
-  display: block;
+  display: inline;
   color: white;
   text-align: center;
-  padding: 10px 10px 10px 2px;
+  padding: 10px 20px 10px 2px;
   text-decoration: none;
 }
 
