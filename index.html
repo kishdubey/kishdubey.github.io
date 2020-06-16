@@ -3,28 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title>Kish Dubey</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="">
-      <h1>Hi! I'm Kish</h1>
-      <p>Computer Engineering student at the<a href="https://www.uottawa.ca/en">University of Ottawa</a>.</p>
-      <p>SWE intern at <a href="https://www.sortedai.com/">Sorted AI</a>.</p>
+    <div class="pull-right">
+      <!-- Dark Mode Button -->
+      <button style="color:black; font-size: 11px;" onclick="toggleDark()">Toggle Dark Mode</button>
+      <script type="text/javascript">
+      function toggleDark() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+      </script>
+      <!-- End -->
     </div>
+    <!-- Introduction -->
+    <div class="main">
+      <div class="avatar"></div>
+      <h1>Hi! I'm Kish</h1>
+      <p>CE student at the <a href="https://www.uottawa.ca/en">University of Ottawa</a>.</p>
+      <p>SWE intern at <a href="https://www.sortedai.com/">Sorted AI</a>.</p>
+      <br>
+    <!-- End -->
 
-    <div class="">
-      <table>
-        <tr>
-          <td>
-            <a href="https://www.linkedin.com/in/kishdubey/">LinkedIn</a>
-          </td>
-          <td>
-            <a href="https://github.com/kishdubey">GitHub</a>
-          </td>
-          <td>
-            <a href="https://drive.google.com/file/d/1-Jz7Cg4Co42fO1b7ejad5-IQ8G_fgBaQ/view?usp=sharing">My Resume</a>
-          </td>
-        </tr>
+    <!-- Social Table -->
+      <table class="table social">
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://www.linkedin.com/in/kishdubey/">
+                <div>
+                  <i class="fa link fa-4x"></i>
+                  <p>LinkedIn</p>
+                </div>
+              </a>
+            </td>
+            <td>
+              <a href="https://github.com/kishdubey">
+                <div>
+                <i class="fa fa-github fa-4x"></i>
+                <p>GitHub</p>
+              </div>
+            </a>
+            </td>
+            <td>
+              <a href="https://drive.google.com/file/d/1-Jz7Cg4Co42fO1b7ejad5-IQ8G_fgBaQ/view?usp=sharing">
+                <div>
+                  <i class="fa fa-inbox fa-4x"></i>
+                  <p>Resume</p>
+                </div>
+              </a>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
+    <!-- End -->
   </body>
 </html>

@@ -1,0 +1,110 @@
+body {
+  padding: 15px;
+  font-family: "cpro", Monaco, monospace;
+  text-align: center;
+  background-color: white;
+  color: #333;
+}
+h1 {
+  font-size: 2em;
+  margin: 0px;
+  padding: 25px 0 15px 0;
+}
+p {
+  margin: 0px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.main {
+  margin: 50px auto 30px;
+  width: 70%;
+}
+.avatar {
+  height: 12em;
+  width: 12em;
+  background: url('kish.jpg')  no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  margin: auto;
+}
+.uni a {
+  color: #000;
+}
+.social {
+  max-width: 400px;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+.social a {
+  color: inherit;
+}
+.social p {
+  padding-top: 6px;
+}
+.twit:before {
+  content: "\f099";
+}
+.link:before {
+  content: "\f0e1";
+}
+.social img {
+  height: 56px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+#pixel {
+  height: 1px !important;
+  width: 1px !important;
+  border-width: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+@media (max-width:520px) {
+  h1 {
+    padding-bottom: 20px;
+    font-size: 1.8em;
+  }
+  td {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .main {
+    margin: 30px auto 30px;
+  }
+  .social {
+    margin-bottom: 50px;
+  }
+  .social p {
+    padding-top: 6px;
+    font-size: 12px;
+  }
+  .uni {
+    line-height: 2em;
+  }
+  .fa-4x {
+    font-size: 3em;
+  }
+  .social img {
+    height: 42px;
+  }
+}
