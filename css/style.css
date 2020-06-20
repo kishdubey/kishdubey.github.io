@@ -26,7 +26,7 @@ td {
 .avatar {
   height: 12em;
   width: 12em;
-  background: url('kish.jpg')  no-repeat center;
+  background: url('../images/kish.jpg')  no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
