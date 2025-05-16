@@ -200,13 +200,11 @@ strong {
     background-position: center;
 }
 .section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    padding: 100px 170px;
+    padding: 16px 24px; /* Tighter vertical and horizontal padding */
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 @media screen and (max-width: 1280px) {
     .section {
