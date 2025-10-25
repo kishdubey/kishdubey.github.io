@@ -96,3 +96,56 @@ jQuery(function($) {
     sr.reveal(".featured-projects", { viewFactor: 0.1 });
     sr.reveal(".other-projects", { viewFactor: 0.05 });
 });
+
+// Article Carousel
+let currentSlide = 0;
+const slides = document.querySelectorAll('.article-slide');
+const totalSlides = slides.length;
+
+function initCarousel() {
+    const dotsContainer = document.getElementById('carouselDots');
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot';
+        dot.onclick = () => goToSlide(i);
+        dotsContainer.appendChild(dot);
+    }
+    updateCarousel();
+}
+
+function moveCarousel(direction) {
+    currentSlide += direction;
+    if (currentSlide >= totalSlides) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = totalSlides - 1;
+    updateCarousel();
+}
+
+function goToSlide(index) {
+    currentSlide = index;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const container = document.getElementById('carouselContainer');
+    const offset = -currentSlide * 100;
+    container.style.transform = `translateX(${offset}%)`;
+
+    // Update dots
+    const dots = document.querySelectorAll('.carousel-dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+
+    // Update arrow buttons
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    prevBtn.disabled = currentSlide === 0;
+    nextBtn.disabled = currentSlide === totalSlides - 1;
+}
+
+// Initialize carousel when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCarousel);
+} else {
+    initCarousel();
+}
