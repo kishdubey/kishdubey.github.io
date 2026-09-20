@@ -1760,7 +1760,13 @@ body[data-view="personal"] .project-screen__back--inline {
 .hero__avatar--photo {
   opacity: 1;
   object-position: center 24%;
-  box-shadow: 0 12px 30px rgba(77, 42, 19, 0.2);
+  filter: grayscale(1) contrast(1.04);
+  box-shadow: 0 12px 30px rgba(22, 22, 22, 0.18);
+}
+
+body[data-theme="dark"] .hero__avatar--photo {
+  filter: grayscale(1) contrast(1.08) brightness(1.05);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
 }
 
 body:not([data-theme]) .hero__avatar--light,
