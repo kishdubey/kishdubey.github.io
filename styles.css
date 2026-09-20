@@ -3824,11 +3824,21 @@ body[data-view="aidev"] .project-screen__back--inline {
 }
 
 .dock__image--linkedin,
-.dock__image--spellbook,
-.hero__mobile-app-image--linkedin,
-.hero__mobile-app-image--spellbook {
+.hero__mobile-app-image--linkedin {
   object-fit: cover;
   border-radius: 22%;
+}
+
+.dock__image--spellbook,
+.hero__mobile-app-image--spellbook {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 9px;
+  border-radius: 22%;
+  background: #11131b;
+  object-fit: contain;
 }
 
 .dock__image--github,
