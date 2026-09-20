@@ -1,115 +1,733 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kish Dubey</title>
-    <link rel="icon" type="image/png" href="./img/emoji/technologist.png" />
-
-    <meta name="description" content="Kish Dubey — founder building AI-native systems for commercial real estate. Toronto." />
+    <meta
+      name="description"
+      content="Kish Dubey — ex-founder and Forward Deployed Engineer at Spellbook. Toronto."
+    />
+    <!-- Open Graph -->
     <meta property="og:title" content="Kish Dubey" />
-    <meta property="og:description" content="Founder building AI-native systems for commercial real estate. Turning weeks of underwriting into minutes." />
+    <meta property="og:description" content="Ex-founder and Forward Deployed Engineer at Spellbook." />
+    <meta property="og:url" content="https://kishdubey.github.io" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kishdubey.github.io/" />
-    <meta property="og:site_name" content="Kish Dubey" />
-    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/png" href="./img/emoji/technologist.png" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script defer src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script defer src="https://unpkg.com/gsap@3/dist/MorphSVGPlugin.min.js"></script>
+    <script type="importmap">
+      { "imports": { "web-haptics": "https://cdn.jsdelivr.net/npm/web-haptics@0.0.6/dist/index.mjs" } }
+    </script>
+  </head>
+  <body data-view="home">
+    <div class="cursor-dot" data-cursor-dot aria-hidden="true"></div>
+    <div class="page-shell">
+      <div class="page-transition" aria-hidden="true">
+        <svg class="page-transition__svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMin slice">
+          <defs>
+            <linearGradient id="page-transition-gradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+              <stop offset="0.2" stop-color="rgb(255, 135, 9)"></stop>
+              <stop offset="0.7" stop-color="rgb(247, 189, 248)"></stop>
+            </linearGradient>
+            <linearGradient id="page-transition-gradient-staya" x1="8" y1="10" x2="92" y2="90" gradientUnits="userSpaceOnUse">
+              <stop offset="0.08" stop-color="#7EB7AA"></stop>
+              <stop offset="0.5" stop-color="#A9D1C6"></stop>
+              <stop offset="0.92" stop-color="#DCEBE4"></stop>
+            </linearGradient>
+            <linearGradient id="page-transition-gradient-yandex" x1="10" y1="8" x2="92" y2="92" gradientUnits="userSpaceOnUse">
+              <stop offset="0.06" stop-color="#B98C45"></stop>
+              <stop offset="0.5" stop-color="#D7B06A"></stop>
+              <stop offset="0.94" stop-color="#EFE2BF"></stop>
+            </linearGradient>
+            <linearGradient id="page-transition-gradient-alrosa" x1="10" y1="10" x2="92" y2="92" gradientUnits="userSpaceOnUse">
+              <stop offset="0.06" stop-color="#7E96BC"></stop>
+              <stop offset="0.52" stop-color="#AFC0DB"></stop>
+              <stop offset="0.94" stop-color="#DFE8F3"></stop>
+            </linearGradient>
+            <linearGradient id="page-transition-gradient-ddb" x1="8" y1="12" x2="92" y2="88" gradientUnits="userSpaceOnUse">
+              <stop offset="0.08" stop-color="#B46F67"></stop>
+              <stop offset="0.5" stop-color="#CD938B"></stop>
+              <stop offset="0.92" stop-color="#E9C9C1"></stop>
+            </linearGradient>
+            <linearGradient id="page-transition-gradient-bbdo" x1="10" y1="10" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+              <stop offset="0.06" stop-color="#A88945"></stop>
+              <stop offset="0.5" stop-color="#C5A464"></stop>
+              <stop offset="0.94" stop-color="#E6D1A3"></stop>
+            </linearGradient>
+            <linearGradient id="page-transition-gradient-personal" x1="8" y1="10" x2="92" y2="90" gradientUnits="userSpaceOnUse">
+              <stop offset="0.06" stop-color="#B78EA5"></stop>
+              <stop offset="0.5" stop-color="#D0B4C5"></stop>
+              <stop offset="0.94" stop-color="#ECE1EA"></stop>
+            </linearGradient>
+            <linearGradient id="page-transition-gradient-aidev" x1="8" y1="10" x2="92" y2="90" gradientUnits="userSpaceOnUse">
+              <stop offset="0.06" stop-color="#C69A7A"></stop>
+              <stop offset="0.5" stop-color="#DDB599"></stop>
+              <stop offset="0.94" stop-color="#F0E5D8"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            class="page-transition__path"
+            fill="rgba(255, 255, 255, 0.88)"
+            stroke="rgba(255, 255, 255, 0.88)"
+            stroke-width="2"
+            vector-effect="non-scaling-stroke"
+            d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
+          ></path>
+        </svg>
+      </div>
 
-    <style>
-        :root {
-            color-scheme: light dark;
-        }
+      <header class="page-header">
+        <div class="site-switcher" aria-label="Site controls">
+          <button class="site-switcher__button site-switcher__theme" type="button" data-theme-toggle aria-label="Toggle light and dark theme" aria-pressed="false">
+            <svg class="site-switcher__icon site-switcher__icon--sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" aria-hidden="true">
+              <path fill="currentColor" fill-rule="evenodd" d="M18 12a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm0 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" clip-rule="evenodd"/>
+              <path fill="currentColor" d="M17 6.038a1 1 0 1 1 2 0v3a1 1 0 0 1-2 0v-3ZM24.244 7.742a1 1 0 1 1 1.618 1.176L24.1 11.345a1 1 0 1 1-1.618-1.176l1.763-2.427ZM29.104 13.379a1 1 0 0 1 .618 1.902l-2.854.927a1 1 0 1 1-.618-1.902l2.854-.927ZM29.722 20.795a1 1 0 0 1-.619 1.902l-2.853-.927a1 1 0 1 1 .618-1.902l2.854.927ZM25.862 27.159a1 1 0 0 1-1.618 1.175l-1.763-2.427a1 1 0 1 1 1.618-1.175l1.763 2.427ZM19 30.038a1 1 0 0 1-2 0v-3a1 1 0 1 1 2 0v3ZM11.755 28.334a1 1 0 0 1-1.618-1.175l1.764-2.427a1 1 0 1 1 1.618 1.175l-1.764 2.427ZM6.896 22.697a1 1 0 1 1-.618-1.902l2.853-.927a1 1 0 1 1 .618 1.902l-2.853.927ZM6.278 15.28a1 1 0 1 1 .618-1.901l2.853.927a1 1 0 1 1-.618 1.902l-2.853-.927ZM10.137 8.918a1 1 0 0 1 1.618-1.176l1.764 2.427a1 1 0 0 1-1.618 1.176l-1.764-2.427Z"/>
+            </svg>
+            <svg class="site-switcher__icon site-switcher__icon--moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" aria-hidden="true">
+              <path fill="currentColor" d="M12.5 8.473a10.968 10.968 0 0 1 8.785-.97 7.435 7.435 0 0 0-3.737 4.672l-.09.373A7.454 7.454 0 0 0 28.732 20.4a10.97 10.97 0 0 1-5.232 7.125l-.497.27c-5.014 2.566-11.175.916-14.234-3.813l-.295-.483C5.53 18.403 7.13 11.93 12.017 8.77l.483-.297Zm4.234.616a8.946 8.946 0 0 0-2.805.883l-.429.234A9 9 0 0 0 10.206 22.5l.241.395A9 9 0 0 0 22.5 25.794l.416-.255a8.94 8.94 0 0 0 2.167-1.99 9.433 9.433 0 0 1-2.782-.313c-5.043-1.352-8.036-6.535-6.686-11.578l.147-.491c.242-.745.573-1.44.972-2.078Z"/>
+            </svg>
+            <span class="site-switcher__sr">Theme</span>
+          </button>
+          <button class="site-switcher__button site-switcher__about" type="button" data-view-toggle="about">
+            <span class="site-switcher__label">about</span>
+          </button>
+        </div>
+      </header>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      <main class="hero" id="about">
+        <div class="hero__content">
+          <div class="hero__identity">
+            <div class="hero__avatar-stack">
+              <img class="hero__avatar hero__avatar--photo" src="./assets/images/kishphoto.png" alt="Kish Dubey" width="1024" height="1024" fetchpriority="high" decoding="async" />
+              <div class="avatar-bubble">
+                <div class="avatar-bubble__content">
+                  <span class="avatar-bubble__text"></span>
+                  <div class="avatar-bubble__tail"></div>
+                </div>
+              </div>
+            </div>
+            <p class="hero__name">Kish Dubey</p>
+          </div>
 
-        html,
-        body {
-            height: 100%;
-        }
+          <h1 class="hero__title">
+            <span class="hero__line hero__line--with-stack">
+              <span class="hero__line-copy">Forward deployed</span>
+              <span
+                class="hero__stack-slot"
+                data-stack-burst-trigger
+                role="button"
+                tabindex="0"
+                aria-label="Reveal skills"
+              >
+                <img class="hero__stack-icon" src="./assets/icons/icon_stack.svg" alt="" />
+              </span>
+              <span class="hero__line-copy">engineer</span>
+            </span>
+            <span class="hero__line words-stagger" data-delay="380" data-stagger="100" data-duration="480">at Spellbook</span>
+          </h1>
 
-        body {
-            font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #111;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            min-height: 100%;
-            padding: 8vh 7vw;
-        }
+          <div class="hero__mobile-apps" aria-label="Mobile primary links">
+            <a class="hero__mobile-app" href="#" aria-label="Framecast" data-view-toggle="staya">
+              <span class="hero__mobile-app-icon">
+                <img class="hero__mobile-app-image hero__mobile-app-image--framecast" src="./assets/icons/framecast-emblem-light.svg" alt="" />
+              </span>
+              <span class="hero__mobile-app-label">Framecast</span>
+            </a>
 
-        main {
-            max-width: 34rem;
-        }
+            <a class="hero__mobile-app" href="#" aria-label="Antler" data-view-toggle="yandex">
+              <span class="hero__mobile-app-icon">
+                <img class="hero__mobile-app-image hero__mobile-app-image--antler" src="./assets/icons/antler-logo.png" alt="" />
+              </span>
+              <span class="hero__mobile-app-label">Antler</span>
+            </a>
 
-        h1 {
-            font-size: 1.05rem;
-            font-weight: 600;
-            letter-spacing: 0.01em;
-            margin-bottom: 1.4rem;
-        }
+            <a class="hero__mobile-app" href="#" aria-label="IBM" data-view-toggle="alrosa">
+              <span class="hero__mobile-app-icon">
+                <img class="hero__mobile-app-image hero__mobile-app-image--ibm" src="./assets/icons/ibm.svg" alt="" />
+              </span>
+              <span class="hero__mobile-app-label">IBM</span>
+            </a>
 
-        p {
-            margin-bottom: 1.6rem;
-            text-wrap: balance;
-        }
+            <a class="hero__mobile-app" href="#" aria-label="Kaagaz" data-view-toggle="ddb">
+              <span class="hero__mobile-app-icon">
+                <img class="hero__mobile-app-image hero__mobile-app-image--kaagaz" src="./assets/icons/kaagaz.webp" alt="" />
+              </span>
+              <span class="hero__mobile-app-label">Kaagaz</span>
+            </a>
 
-        .muted {
-            color: #666;
-        }
+            <a class="hero__mobile-app" href="#" aria-label="bordr" data-view-toggle="bbdo">
+              <span class="hero__mobile-app-icon">
+                <span class="ico">🚀</span>
+              </span>
+              <span class="hero__mobile-app-label">bordr</span>
+            </a>
 
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem 1.1rem;
-        }
+            <a class="hero__mobile-app" href="#" aria-label="Writing" data-view-toggle="personal">
+              <span class="hero__mobile-app-icon">
+                <span class="ico">✍️</span>
+              </span>
+              <span class="hero__mobile-app-label">Writing</span>
+            </a>
 
-        a {
-            color: inherit;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            text-decoration-thickness: 1px;
-        }
+            <a
+              class="hero__mobile-app"
+              href="https://www.linkedin.com/in/kishdubey/"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn"
+            >
+              <span class="hero__mobile-app-icon">
+                <span class="ico ico--svg">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3ZM8.339 18.337H5.667V9.747H8.339V18.337ZM7.003 8.574C6.59244 8.574 6.1987 8.41091 5.9084 8.1206C5.61809 7.8303 5.455 7.43655 5.455 7.026C5.455 6.61544 5.61809 6.22171 5.9084 5.9314C6.1987 5.64109 6.59244 5.478 7.003 5.478C7.41356 5.478 7.80729 5.64109 8.0976 5.9314C8.38791 6.22171 8.551 6.61544 8.551 7.026C8.551 7.43655 8.38791 7.8303 8.0976 8.1206C7.80729 8.41091 7.41356 8.574 7.003 8.574ZM18.338 18.337H15.669V14.16C15.669 13.164 15.651 11.883 14.281 11.883C12.891 11.883 12.68 12.969 12.68 14.09V18.338H10.013V9.748H12.573V10.922H12.61C12.965 10.247 13.837 9.535 15.134 9.535C17.838 9.535 18.337 11.313 18.337 13.627V18.337H18.338Z"/></svg>
+                </span>
+              </span>
+              <span class="hero__mobile-app-label">LinkedIn</span>
+            </a>
 
-        nav a {
-            text-decoration-color: #bbb;
-        }
+            <a
+              class="hero__mobile-app"
+              href="https://github.com/kishdubey"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub"
+            >
+              <span class="hero__mobile-app-icon">
+                <span class="ico ico--svg">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.92 1.23 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.21.7.82.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg>
+                </span>
+              </span>
+              <span class="hero__mobile-app-label">GitHub</span>
+            </a>
 
-        a:hover {
-            text-decoration-color: currentColor;
-        }
+            <a
+              class="hero__mobile-app"
+              href="https://cal.com/kishdubey/30min"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Book a call"
+            >
+              <span class="hero__mobile-app-icon">
+                <span class="ico">📅</span>
+              </span>
+              <span class="hero__mobile-app-label">Book a call</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero__skill-burst" data-skill-burst aria-hidden="true"></div>
+      </main>
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                color: #e8e8e8;
-                background: #0d0d0d;
-            }
+      <section class="project-screen" id="project-screen" aria-labelledby="project-title" aria-hidden="true">
+        <div class="project-screen__inner">
+          <div class="project-screen__panel project-screen__panel--generic" data-project-panel="generic">
+            <p class="project-screen__eyebrow">Selected work</p>
+            <h2 class="project-screen__title" id="project-title">Kish Dubey</h2>
+            <p class="project-screen__lede">
+              Ex-founder and Forward Deployed Engineer at Spellbook.
+            </p>
+            <div class="project-screen__facts" aria-label="project details">
+              <div class="project-screen__fact">
+                <span class="project-screen__label">Role</span>
+                <span class="project-screen__value">Forward Deployed Engineer</span>
+              </div>
+              <div class="project-screen__fact">
+                <span class="project-screen__label">Focus</span>
+                <span class="project-screen__value">Applied AI</span>
+              </div>
+              <div class="project-screen__fact">
+                <span class="project-screen__label">Based in</span>
+                <span class="project-screen__value">Toronto</span>
+              </div>
+            </div>
+          </div>
 
-            .muted {
-                color: #888;
-            }
+          <article class="project-screen__panel staya-project" data-project-panel="staya" aria-label="Framecast" hidden>
+            <button class="project-screen__back project-screen__back--fixed" type="button" data-view-toggle="home" aria-label="Back to home">
+              <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M11.875 4.375 6.25 10l5.625 5.625"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span class="project-screen__back-label">Back</span>
+            </button>
 
-            nav a {
-                text-decoration-color: #555;
-            }
-        }
-    </style>
-</head>
+            <header class="staya-project__hero">
+              <img class="staya-project__logo staya-project__logo--framecast" src="./assets/icons/framecast-wordmark.svg" alt="Framecast" />
+              <div class="staya-project__badge">Founder &amp; CTO</div>
+              <p class="staya-project__years">2025 — 2026</p>
+              <p class="staya-project__summary">
+                Co-founded and led engineering for AI-powered commercial-real-estate underwriting.
+              </p>
+            </header>
 
-<body>
-    <main>
-        <h1>Kish Dubey</h1>
-        <p>Founder building AI-native systems for commercial real estate.</p>
-        <p class="muted">Turning weeks of underwriting into minutes. Based in Toronto.</p>
-        <nav>
-            <a href="https://www.linkedin.com/in/kishdubey/">LinkedIn</a>
-            <a href="https://github.com/kishdubey">GitHub</a>
-            <a href="https://cal.com/kishdubey/30min">Book a call</a>
-        </nav>
-    </main>
+            <section class="staya-project__headline-block" aria-label="Framecast overview">
+              <p class="staya-project__lede">
+                Framecast turned commercial-real-estate data rooms into institutional-grade underwriting models. It analyzed 1,200+ deals for three enterprise customers, saving about 38 analyst hours per deal.
+              </p>
+              <p class="staya-project__lede">
+                I built the product end to end: document ingestion, agentic extraction, automated underwriting, and research workflows with evidence and override trails.
+              </p>
+            </section>
+
+            <div class="staya-project__footer">
+              <button class="project-screen__back project-screen__back--inline" type="button" data-view-toggle="home" aria-label="Back to home">
+                <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.875 4.375 6.25 10l5.625 5.625"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span class="project-screen__back-label">Back</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-screen__panel market-project" data-project-panel="yandex" aria-label="Antler" hidden>
+            <button class="project-screen__back project-screen__back--fixed" type="button" data-view-toggle="home" aria-label="Back to home">
+              <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M11.875 4.375 6.25 10l5.625 5.625"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span class="project-screen__back-label">Back</span>
+            </button>
+
+            <header class="market-project__hero">
+              <div class="market-project__logo market-project__logo--emoji" aria-hidden="true"><span class="ico ico--logo">🌱</span></div>
+              <div class="market-project__badge">Founder in Residence</div>
+              <p class="market-project__years">2025 — present</p>
+              <p class="market-project__summary">
+                Founder in Residence at <a href="https://antler.co" target="_blank" rel="noreferrer">Antler</a>, a global VC that's backed 900+ companies across six continents (sub-10% acceptance).
+              </p>
+              <p class="market-project__summary">
+                Building and validating AI-native solutions for commercial real estate.
+              </p>
+            </header>
+
+            <div class="market-project__footer">
+              <button class="project-screen__back project-screen__back--inline" type="button" data-view-toggle="home" aria-label="Back to home">
+                <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.875 4.375 6.25 10l5.625 5.625"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span class="project-screen__back-label">Back</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-screen__panel alrosa-project" data-project-panel="alrosa" aria-label="IBM" hidden>
+            <button class="project-screen__back project-screen__back--fixed" type="button" data-view-toggle="home" aria-label="Back to home">
+              <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M11.875 4.375 6.25 10l5.625 5.625"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span class="project-screen__back-label">Back</span>
+            </button>
+
+            <header class="alrosa-project__hero">
+              <div class="alrosa-project__logo alrosa-project__logo--emoji" aria-hidden="true"><span class="ico ico--logo">💼</span></div>
+              <div class="alrosa-project__badge">Software Engineer, AI/ML</div>
+              <p class="alrosa-project__years">2022 — 2025</p>
+              <p class="alrosa-project__summary">
+                Built scalable backend, frontend, and production ML systems for enterprise data monitoring, compliance automation, and analytics — used by Fortune 500 clients.
+              </p>
+              <p class="alrosa-project__summary">
+                Earlier, as a Data Scientist in IBM's elite Extreme Blue program, built a Graph2Seq ML system that lifted SQL-to-ticket matching accuracy by 75% (to 79.4%), presented to 450+ stakeholders.
+              </p>
+            </header>
+
+            <section class="alrosa-project__media-marquee" aria-label="Skills">
+              <div class="alrosa-project__media-marquee-viewport">
+                <div class="alrosa-project__media-marquee-track">
+                  <div class="alrosa-project__media-marquee-group">
+                    <span class="alrosa-project__media-item">Python</span>
+                    <span class="alrosa-project__media-item">PyTorch</span>
+                    <span class="alrosa-project__media-item">TensorFlow</span>
+                    <span class="alrosa-project__media-item">React</span>
+                    <span class="alrosa-project__media-item">Kubernetes</span>
+                    <span class="alrosa-project__media-item">GCP</span>
+                    <span class="alrosa-project__media-item">SQL</span>
+                  </div>
+                  <div class="alrosa-project__media-marquee-group" aria-hidden="true">
+                    <span class="alrosa-project__media-item">Python</span>
+                    <span class="alrosa-project__media-item">PyTorch</span>
+                    <span class="alrosa-project__media-item">TensorFlow</span>
+                    <span class="alrosa-project__media-item">React</span>
+                    <span class="alrosa-project__media-item">Kubernetes</span>
+                    <span class="alrosa-project__media-item">GCP</span>
+                    <span class="alrosa-project__media-item">SQL</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="alrosa-project__footer">
+              <button class="project-screen__back project-screen__back--inline" type="button" data-view-toggle="home" aria-label="Back to home">
+                <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.875 4.375 6.25 10l5.625 5.625"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span class="project-screen__back-label">Back</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-screen__panel ddb-project" data-project-panel="ddb" aria-label="Kaagaz" hidden>
+            <button class="project-screen__back project-screen__back--fixed" type="button" data-view-toggle="home" aria-label="Back to home">
+              <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M11.875 4.375 6.25 10l5.625 5.625"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span class="project-screen__back-label">Back</span>
+            </button>
+
+            <header class="ddb-project__hero">
+              <div class="ddb-project__logo ddb-project__logo--emoji" aria-hidden="true"><span class="ico ico--logo">📄</span></div>
+              <div class="ddb-project__badge">Software Engineer · YC W'22</div>
+              <p class="ddb-project__years">2020</p>
+              <p class="ddb-project__summary">
+                Early engineer at <a href="https://kaagaz.app" target="_blank" rel="noreferrer">Kaagaz</a>, a Y Combinator-backed document-scanning startup. Helped grow the product from early stage to 10M+ downloads and a 4.8★ rating.
+              </p>
+            </header>
+
+            <div class="ddb-project__footer">
+              <button class="project-screen__back project-screen__back--inline" type="button" data-view-toggle="home" aria-label="Back to home">
+                <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.875 4.375 6.25 10l5.625 5.625"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span class="project-screen__back-label">Back</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-screen__panel bbdo-project" data-project-panel="bbdo" aria-label="bordr" hidden>
+            <button class="project-screen__back project-screen__back--fixed" type="button" data-view-toggle="home" aria-label="Back to home">
+              <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M11.875 4.375 6.25 10l5.625 5.625"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span class="project-screen__back-label">Back</span>
+            </button>
+
+            <header class="bbdo-project__hero">
+              <div class="bbdo-project__logo bbdo-project__logo--emoji" aria-hidden="true"><span class="ico ico--logo">🚀</span></div>
+              <div class="bbdo-project__badge">Founder</div>
+              <p class="bbdo-project__years">2021</p>
+              <p class="bbdo-project__summary">
+                Bootstrapped a B2B SaaS to 9 clients and five-figure revenue. Hit growth constraints around distribution and customer acquisition — and learned more from that wall than from any success.
+              </p>
+            </header>
+
+            <div class="bbdo-project__footer">
+              <button class="project-screen__back project-screen__back--inline" type="button" data-view-toggle="home" aria-label="Back to home">
+                <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.875 4.375 6.25 10l5.625 5.625"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span class="project-screen__back-label">Back</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-screen__panel personal-project" data-project-panel="personal" aria-label="Writing" hidden>
+            <button class="project-screen__back project-screen__back--fixed" type="button" data-view-toggle="home" aria-label="Back to home">
+              <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M11.875 4.375 6.25 10l5.625 5.625"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span class="project-screen__back-label">Back</span>
+            </button>
+
+            <header class="personal-project__hero">
+              <p class="personal-project__intro">
+                Occasional write-ups on what I'm learning building with AI.
+              </p>
+            </header>
+
+            <section class="personal-project__cards-section" aria-label="Writing">
+              <ol class="personal-project__cards">
+                <li class="personal-project-card personal-project-card--glass personal-project-card--sber">
+                  <article class="personal-project-card__content">
+                    <div class="personal-project-card__copy">
+                      <div class="personal-project-card__meta">
+                        <div class="personal-project-card__badge">Jun 2025</div>
+                        <div class="personal-project-card__badge">AI agents</div>
+                      </div>
+                      <h2 class="personal-project-card__title">Two Weeks, Three AI Agents, and One Knowledge Graph</h2>
+                      <p class="personal-project-card__description">
+                        Building a research assistant — and what coordinating AI agents is actually like.
+                      </p>
+                      <p class="personal-project-card__description">
+                        <a href="https://www.linkedin.com/pulse/two-weeks-three-ai-agents-one-knowledge-graph-building-kish-dubey-igufc/" target="_blank" rel="noreferrer">Read on LinkedIn</a>
+                      </p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="personal-project-card personal-project-card--glass personal-project-card--sber">
+                  <article class="personal-project-card__content">
+                    <div class="personal-project-card__copy">
+                      <div class="personal-project-card__meta">
+                        <div class="personal-project-card__badge">May 2025</div>
+                        <div class="personal-project-card__badge">Prompt engineering</div>
+                      </div>
+                      <h2 class="personal-project-card__title">Prompt Engineering for Document Analysis</h2>
+                      <p class="personal-project-card__description">
+                        What I learned moving a messy-document extraction pipeline from GPT-4 to Claude, breaking through a 60% accuracy ceiling.
+                      </p>
+                      <p class="personal-project-card__description">
+                        <a href="https://www.linkedin.com/pulse/prompt-engineering-document-analysis-what-i-learned-moving-kish-dubey-pznfc/" target="_blank" rel="noreferrer">Read on LinkedIn</a>
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              </ol>
+            </section>
+
+            <div class="personal-project__footer">
+              <button class="project-screen__back project-screen__back--inline" type="button" data-view-toggle="home" aria-label="Back to home">
+                <svg class="project-screen__back-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.875 4.375 6.25 10l5.625 5.625"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span class="project-screen__back-label">Back</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-screen__panel about-screen" data-project-panel="about" aria-label="About Kish Dubey" hidden>
+            <div class="about-screen__inner">
+              <div class="about-screen__copy" data-about-typing aria-live="off"></div>
+              <template id="about-typing-template">
+                <p class="about-screen__paragraph about-screen__paragraph--lead">Hi there 👋</p>
+
+                <p class="about-screen__paragraph">I'm Kish — a Forward Deployed Engineer at Spellbook, where I build enterprise integrations for legal AI.</p>
+
+                <p class="about-screen__paragraph">Before that, I co-founded <a href="#" data-view-toggle="staya">Framecast</a> and led engineering for an AI underwriting platform used across 1,200+ deals by three enterprise customers.</p>
+
+                <p class="about-screen__paragraph">I work where product, AI, and real operating workflows meet — from production agents and document pipelines to integrations that teams actually use.</p>
+
+                <p class="about-screen__paragraph">Earlier, I built an IBM RAG system adopted by 50+ engineers and shipped product at YC-backed Kaagaz (10M+ downloads).</p>
+
+                <p class="about-screen__paragraph">Based in Toronto. Always happy to talk applied AI, forward deployment, or startup ideas.</p>
+
+                <p class="about-screen__paragraph">Let's connect.</p>
+
+              </template>
+              <div class="about-screen__cta">
+                <div class="about-screen__cta-badges">
+                  <a class="about-screen__cta-badge" href="https://www.linkedin.com/in/kishdubey/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                    <svg class="about-screen__cta-badge-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M20 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3ZM8.339 18.337H5.667V9.747H8.339V18.337ZM7.003 8.574C6.59244 8.574 6.1987 8.41091 5.9084 8.1206C5.61809 7.8303 5.455 7.43655 5.455 7.026C5.455 6.61544 5.61809 6.22171 5.9084 5.9314C6.1987 5.64109 6.59244 5.478 7.003 5.478C7.41356 5.478 7.80729 5.64109 8.0976 5.9314C8.38791 6.22171 8.551 6.61544 8.551 7.026C8.551 7.43655 8.38791 7.8303 8.0976 8.1206C7.80729 8.41091 7.41356 8.574 7.003 8.574ZM18.338 18.337H15.669V14.16C15.669 13.164 15.651 11.883 14.281 11.883C12.891 11.883 12.68 12.969 12.68 14.09V18.338H10.013V9.748H12.573V10.922H12.61C12.965 10.247 13.837 9.535 15.134 9.535C17.838 9.535 18.337 11.313 18.337 13.627V18.337H18.338Z"/>
+                    </svg>
+                    LinkedIn
+                  </a>
+                  <a class="about-screen__cta-badge" href="https://cal.com/kishdubey/30min" target="_blank" rel="noreferrer" aria-label="Book a call">
+                    <svg class="about-screen__cta-badge-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 16H5V10h14v10Zm0-12H5V6h14v2Z"/>
+                    </svg>
+                    Book a call
+                  </a>
+                  <a class="about-screen__cta-badge" href="https://github.com/kishdubey" target="_blank" rel="noreferrer" aria-label="GitHub">
+                    <svg class="about-screen__cta-badge-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.92 1.23 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.21.7.82.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/>
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <nav class="dock wrapper" aria-label="Primary links">
+        <div class="dock__glass">
+          <ul class="dock__track toolbar nav-list">
+            <li class="dock__item toolbarItem nav-item">
+              <a
+                class="dock__link toolbarLink nav-item__link"
+                href="#"
+                aria-label="Framecast"
+                data-transition-trigger="staya"
+                data-view-toggle="staya"
+              >
+                <span class="dock__tile">
+                  <img class="dock__image dock__image--framecast" src="./assets/icons/framecast-emblem-light.svg" alt="" />
+                </span>
+                <span class="dock__label nav-item__tooltip">Framecast</span>
+              </a>
+            </li>
+            <li class="dock__item toolbarItem nav-item">
+              <a class="dock__link toolbarLink nav-item__link" href="#" aria-label="Antler" data-view-toggle="yandex">
+                <span class="dock__tile">
+                  <img class="dock__image dock__image--antler" src="./assets/icons/antler-logo.png" alt="" />
+                </span>
+                <span class="dock__label nav-item__tooltip">Antler</span>
+              </a>
+            </li>
+            <li class="dock__item toolbarItem nav-item">
+              <a class="dock__link toolbarLink nav-item__link" href="#" aria-label="IBM" data-view-toggle="alrosa">
+                <span class="dock__tile">
+                  <img class="dock__image dock__image--ibm" src="./assets/icons/ibm.svg" alt="" />
+                </span>
+                <span class="dock__label nav-item__tooltip">IBM</span>
+              </a>
+            </li>
+            <li class="dock__item toolbarItem nav-item">
+              <a class="dock__link toolbarLink nav-item__link" href="#" aria-label="Kaagaz" data-view-toggle="ddb">
+                <span class="dock__tile">
+                  <img class="dock__image dock__image--kaagaz" src="./assets/icons/kaagaz.webp" alt="" />
+                </span>
+                <span class="dock__label nav-item__tooltip">Kaagaz</span>
+              </a>
+            </li>
+            <li class="dock__item toolbarItem nav-item">
+              <a class="dock__link toolbarLink nav-item__link" href="#" aria-label="bordr" data-view-toggle="bbdo">
+                <span class="dock__tile">
+                  <span class="ico">🚀</span>
+                </span>
+                <span class="dock__label nav-item__tooltip">bordr</span>
+              </a>
+            </li>
+            <li class="dock__item toolbarItem nav-item">
+              <a class="dock__link toolbarLink nav-item__link" href="#" aria-label="Writing" data-view-toggle="personal">
+                <span class="dock__tile">
+                  <span class="ico">✍️</span>
+                </span>
+                <span class="dock__label nav-item__tooltip">Writing</span>
+              </a>
+            </li>
+            <li class="dock__divider" aria-hidden="true">
+              <span class="dock__divider-line"></span>
+            </li>
+            <li class="dock__item toolbarItem nav-item">
+              <a
+                class="dock__link toolbarLink nav-item__link"
+                href="https://www.linkedin.com/in/kishdubey/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="LinkedIn"
+              >
+                <span class="dock__tile">
+                  <span class="ico ico--svg">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3ZM8.339 18.337H5.667V9.747H8.339V18.337ZM7.003 8.574C6.59244 8.574 6.1987 8.41091 5.9084 8.1206C5.61809 7.8303 5.455 7.43655 5.455 7.026C5.455 6.61544 5.61809 6.22171 5.9084 5.9314C6.1987 5.64109 6.59244 5.478 7.003 5.478C7.41356 5.478 7.80729 5.64109 8.0976 5.9314C8.38791 6.22171 8.551 6.61544 8.551 7.026C8.551 7.43655 8.38791 7.8303 8.0976 8.1206C7.80729 8.41091 7.41356 8.574 7.003 8.574ZM18.338 18.337H15.669V14.16C15.669 13.164 15.651 11.883 14.281 11.883C12.891 11.883 12.68 12.969 12.68 14.09V18.338H10.013V9.748H12.573V10.922H12.61C12.965 10.247 13.837 9.535 15.134 9.535C17.838 9.535 18.337 11.313 18.337 13.627V18.337H18.338Z"/></svg>
+                  </span>
+                </span>
+                <span class="dock__label nav-item__tooltip">LinkedIn</span>
+              </a>
+            </li>
+            <li class="dock__item toolbarItem nav-item">
+              <a
+                class="dock__link toolbarLink nav-item__link"
+                href="https://github.com/kishdubey"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="GitHub"
+              >
+                <span class="dock__tile">
+                  <span class="ico ico--svg">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.92 1.23 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.21.7.82.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg>
+                  </span>
+                </span>
+                <span class="dock__label nav-item__tooltip">GitHub</span>
+              </a>
+            </li>
+            <li class="dock__item toolbarItem nav-item">
+              <a
+                class="dock__link toolbarLink nav-item__link"
+                href="https://cal.com/kishdubey/30min"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Book a call"
+              >
+                <span class="dock__tile">
+                  <span class="ico">📅</span>
+                </span>
+                <span class="dock__label nav-item__tooltip">Book a call</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <svg class="glass-switcher__defs" aria-hidden="true">
+      <filter id="glass-switcher-filter" primitiveUnits="objectBoundingBox">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="0.015" result="blur"></feGaussianBlur>
+        <feDisplacementMap in="blur" in2="blur" scale="0"></feDisplacementMap>
+      </filter>
+    </svg>
+
+    <a
+      class="site-credit"
+      href="https://yevtam.com"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="position:fixed;right:12px;bottom:10px;z-index:40;font:400 12px/1.4 'DM Sans',-apple-system,sans-serif;color:var(--muted,#888);text-decoration:none;opacity:.7;"
+      >design adapted from <span style="text-decoration:underline;text-underline-offset:2px;">yevtam.com</span></a
+    >
 
     <script>
         // 🥚 for the curious few who open the console
@@ -123,6 +741,6 @@
         );
         console.log("%cSay hi → cal.com/kishdubey/30min", "color:#888");
     </script>
-</body>
-
+    <script type="module" src="./script.js?v=3"></script>
+  </body>
 </html>
