@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
-  <title id="title">Writing</title>
+  <title id="title">Blog</title>
   <rect width="100" height="100" rx="23" fill="#f4efe6"/>
-  <path d="M29 19h30l13 13v47a7 7 0 0 1-7 7H29a7 7 0 0 1-7-7V26a7 7 0 0 1 7-7Z" fill="#fff" stroke="#1b1b1b" stroke-width="5" stroke-linejoin="round"/>
-  <path d="M59 19v14h14" fill="none" stroke="#1b1b1b" stroke-width="5" stroke-linejoin="round"/>
-  <path d="m38 70 5-15 24-24 10 10-24 24-15 5Z" fill="#ff4f9a" stroke="#1b1b1b" stroke-width="4" stroke-linejoin="round"/>
-  <path d="m62 36 10 10" stroke="#1b1b1b" stroke-width="4"/>
+  <rect x="20" y="14" width="60" height="72" rx="11" fill="#fff" stroke="#1b1b1b" stroke-width="5"/>
+  <rect x="31" y="28" width="38" height="11" rx="3" fill="#ff4f9a"/>
+  <path d="M31 50h38M31 60h31M31 70h23" fill="none" stroke="#1b1b1b" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="69" cy="70" r="5" fill="#ff4f9a"/>
 </svg>
