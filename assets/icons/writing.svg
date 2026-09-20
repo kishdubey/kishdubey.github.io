@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
   <title id="title">Blog</title>
-  <rect width="100" height="100" rx="23" fill="#171719"/>
-  <rect x="19" y="16" width="62" height="68" rx="8" fill="#fff"/>
-  <rect x="29" y="28" width="42" height="10" rx="2" fill="#ff4f9a"/>
-  <path d="M29 49h42M29 59h35M29 69h23" fill="none" stroke="#171719" stroke-width="5" stroke-linecap="round"/>
-  <path d="M69 16h12v20L69 25V16Z" fill="#ff4f9a"/>
+  <rect width="100" height="100" rx="23" fill="#f58a2a"/>
+  <circle cx="31" cy="69" r="7" fill="#fff"/>
+  <path d="M29 49c12 0 22 10 22 22M29 29c23 0 42 19 42 42" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
 </svg>
