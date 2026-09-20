@@ -1011,22 +1011,22 @@ document.addEventListener("DOMContentLoaded", () => {
       staya: {
         eyebrow: "Founder & CTO",
         title: "Framecast",
-        lede: "AI-powered commercial-real-estate underwriting, built from data room to model.",
+        lede: "AI underwriting that turns commercial real estate data rooms into financial models.",
       },
       yandex: {
         eyebrow: "Founder in Residence",
         title: "Antler",
-        lede: "Building and validating AI-native solutions for commercial real estate at a global VC.",
+        lede: "Founder-in-residence work that became Framecast, an AI-native underwriting platform.",
       },
       alrosa: {
         eyebrow: "Software Engineer, AI/ML",
         title: "IBM",
-        lede: "Production ML, backend, and frontend systems for enterprise data, compliance, and analytics.",
+        lede: "Production systems for enterprise data and compliance, including RAG adopted by 50+ engineers.",
       },
       ddb: {
-        eyebrow: "Software Engineer · YC W'22",
+        eyebrow: "Software Engineer",
         title: "Kaagaz",
-        lede: "Early engineer at a YC-backed document-scanning startup that hit 10M+ downloads.",
+        lede: "Built for a mobile document scanner that later joined YC W22 and reached 10M+ downloads.",
       },
       bbdo: {
         eyebrow: "Software Engineer, Mapping",
@@ -1036,7 +1036,7 @@ document.addEventListener("DOMContentLoaded", () => {
       personal: {
         eyebrow: "Writing",
         title: "Writing",
-        lede: "Occasional write-ups on what I'm learning building with AI.",
+        lede: "Notes on building reliable AI systems and the workflows around them.",
       },
     });
     const SHAPES = Object.freeze({
