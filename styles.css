@@ -2157,8 +2157,7 @@ body[data-view="yandex"] .project-screen__back {
   border-radius: 3px;
 }
 
-body[data-theme="dark"] .about-screen__cta-badge-icon--github,
-body[data-theme="dark"] .about-screen__cta-badge-icon--calendar {
+body[data-theme="dark"] .about-screen__cta-badge-icon--github {
   filter: invert(1);
 }
 
@@ -3832,9 +3831,7 @@ body[data-view="aidev"] .project-screen__back--inline {
 }
 
 body[data-theme="dark"] .dock__image--github,
-body[data-theme="dark"] .dock__image--calendar,
-body[data-theme="dark"] .hero__mobile-app-image--github,
-body[data-theme="dark"] .hero__mobile-app-image--calendar {
+body[data-theme="dark"] .hero__mobile-app-image--github {
   filter: invert(1);
 }
 
