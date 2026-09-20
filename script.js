@@ -1029,9 +1029,9 @@ document.addEventListener("DOMContentLoaded", () => {
         lede: "Early engineer at a YC-backed document-scanning startup that hit 10M+ downloads.",
       },
       bbdo: {
-        eyebrow: "Founder",
-        title: "bordr",
-        lede: "Bootstrapped a B2B SaaS to nine clients and five-figure revenue.",
+        eyebrow: "Software Engineer, Mapping",
+        title: "Pinkbot",
+        lede: "Delivery-robot mapping with city-scale maps and a 15% gain in sidewalk detection accuracy.",
       },
       personal: {
         eyebrow: "Writing",
@@ -1053,7 +1053,7 @@ document.addEventListener("DOMContentLoaded", () => {
         yandex:   { light: "#E8B86D", dark: "#745C37" },
         alrosa:   { light: "#B4C9DF", dark: "#5A6570" },
         ddb:      { light: "#C9A86A", dark: "#655435" },
-        bbdo:     { light: "#D4867D", dark: "#6A433F" },
+        bbdo:     { light: "#F7A2C4", dark: "#8E315B" },
         personal: { light: "#8FB89A", dark: "#485C4D" },
       },
     });
@@ -1529,18 +1529,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const SKILL_LABELS = [
-      "Brand Strategy",
-      "Creative Direction",
-      "Go-to-Market",
-      "Growth",
-      "Product Strategy",
-      "E-commerce",
-      "Performance",
-      "Fundraising",
-      "Content Systems",
-      "AI Workflows",
-      "Prototyping",
-      "Storytelling",
+      "Forward deployment",
+      "Enterprise integrations",
+      "Applied AI",
+      "Document intelligence",
+      "LLM agents",
+      "RAG systems",
+      "Product engineering",
+      "Python, Go, TypeScript",
+      "AWS and infrastructure",
+      "Customer workflows",
+      "Robotics and mapping",
+      "Zero to one delivery",
     ];
 
     const PALETTE = [
