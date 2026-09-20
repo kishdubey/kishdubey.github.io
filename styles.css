@@ -3824,7 +3824,9 @@ body[data-view="aidev"] .project-screen__back--inline {
 }
 
 .dock__image--linkedin,
-.hero__mobile-app-image--linkedin {
+.dock__image--spellbook,
+.hero__mobile-app-image--linkedin,
+.hero__mobile-app-image--spellbook {
   object-fit: cover;
   border-radius: 22%;
 }
