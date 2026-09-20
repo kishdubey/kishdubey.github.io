@@ -3818,6 +3818,9 @@ body[data-view="aidev"] .project-screen__back--inline {
 .dock__image--writing,
 .hero__mobile-app-image--pinkbot,
 .hero__mobile-app-image--writing {
+  width: 100%;
+  height: 100%;
+  margin: 0;
   object-fit: contain;
   border-radius: 22%;
 }
