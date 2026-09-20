@@ -20,26 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const navItems = [...document.querySelectorAll(".nav-item")];
   const viewToggles = [...document.querySelectorAll("[data-view-toggle]")];
   const projectScreen = document.querySelector("#project-screen");
-  const projectTitle = document.querySelector("#project-title");
-  const projectEyebrow = document.querySelector(".project-screen__eyebrow");
-  const projectLede = document.querySelector(".project-screen__lede");
-  const genericProjectPanel = document.querySelector('[data-project-panel="generic"]');
-  const stayaProjectPanel = document.querySelector('[data-project-panel="staya"]');
-  const yandexProjectPanel = document.querySelector('[data-project-panel="yandex"]');
-  const alrosaProjectPanel = document.querySelector('[data-project-panel="alrosa"]');
-  const ddbProjectPanel = document.querySelector('[data-project-panel="ddb"]');
-  const bbdoProjectPanel = document.querySelector('[data-project-panel="bbdo"]');
-  const personalProjectPanel = document.querySelector('[data-project-panel="personal"]');
   const aboutProjectPanel = document.querySelector('[data-project-panel="about"]');
-  const projectPanelsByView = new Map([
-    ["staya", stayaProjectPanel],
-    ["yandex", yandexProjectPanel],
-    ["alrosa", alrosaProjectPanel],
-    ["ddb", ddbProjectPanel],
-    ["bbdo", bbdoProjectPanel],
-    ["personal", personalProjectPanel],
-    ["about", aboutProjectPanel],
-  ]);
+  const projectPanelsByView = new Map([["about", aboutProjectPanel]]);
   const aboutTypingHost = document.querySelector("[data-about-typing]");
   const aboutTypingTemplate = document.querySelector("#about-typing-template");
   const pageTransition = document.querySelector(".page-transition");
@@ -1007,38 +989,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const initProjectTransition = () => {
-    const PROJECT_META = Object.freeze({
-      staya: {
-        eyebrow: "Founder & CTO",
-        title: "Framecast",
-        lede: "AI underwriting that turns commercial real estate data rooms into financial models.",
-      },
-      yandex: {
-        eyebrow: "Founder in Residence",
-        title: "Antler",
-        lede: "Founder-in-residence work that became Framecast, an AI-native underwriting platform.",
-      },
-      alrosa: {
-        eyebrow: "Software Engineer, AI/ML",
-        title: "IBM",
-        lede: "Production systems for enterprise data and compliance, including RAG adopted by 50+ engineers.",
-      },
-      ddb: {
-        eyebrow: "Software Engineer",
-        title: "Kaagaz",
-        lede: "Built for a mobile document scanner that later joined YC W22 and reached 10M+ downloads.",
-      },
-      bbdo: {
-        eyebrow: "Software Engineer, Mapping",
-        title: "Pinkbot",
-        lede: "Delivery-robot mapping with city-scale maps and a 15% gain in sidewalk detection accuracy.",
-      },
-      personal: {
-        eyebrow: "Writing",
-        title: "Writing",
-        lede: "Notes on building reliable AI systems and the workflows around them.",
-      },
-    });
+    const PROJECT_META = Object.freeze({});
     const SHAPES = Object.freeze({
       collapsed: "M 0 100 V 100 Q 50 100 100 100 V 100 z",
       crest: "M 0 100 V 50 Q 50 0 100 50 V 100 z",
@@ -1048,14 +999,7 @@ document.addEventListener("DOMContentLoaded", () => {
       glass:     "rgba(255, 255, 255, 0.88)",
       glassDark: "rgba(18, 17, 16, 0.88)",
       white:     "#ffffff",
-      tints: {
-        staya:    { light: "#BDBAB4", dark: "#5F5D5A" },
-        yandex:   { light: "#E8B86D", dark: "#745C37" },
-        alrosa:   { light: "#B4C9DF", dark: "#5A6570" },
-        ddb:      { light: "#C9A86A", dark: "#655435" },
-        bbdo:     { light: "#F7A2C4", dark: "#8E315B" },
-        personal: { light: "#8FB89A", dark: "#485C4D" },
-      },
+      tints: {},
     });
 
     const getGlassFill = () =>
@@ -1109,23 +1053,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    const syncProjectContent = (view) => {
-      const project = PROJECT_META[view];
-      if (!project) {
-        return;
-      }
-
-      if (projectTitle) {
-        projectTitle.textContent = project.title;
-      }
-      if (projectEyebrow) {
-        projectEyebrow.textContent = project.eyebrow;
-      }
-      if (projectLede) {
-        projectLede.textContent = project.lede;
-      }
-    };
-
     const syncProjectMedia = (view) => {
       projectPanelsByView.forEach((panel, panelView) => {
         if (!(panel instanceof HTMLElement) || panelView === view) {
@@ -1164,48 +1091,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const syncProjectPanels = (view) => {
       const isHome = view === "home";
       const isAbout = view === "about";
-      const isStaya = view === "staya";
-      const isYandex = view === "yandex";
-      const isAlrosa = view === "alrosa";
-      const isDdb = view === "ddb";
-      const isBbdo = view === "bbdo";
-      const isPersonal = view === "personal";
-      const isCaseStudy = isStaya || isYandex || isAlrosa || isDdb || isBbdo || isPersonal;
-
       if (projectScreen) {
         if (isHome) {
           projectScreen.removeAttribute("data-layout");
         } else {
-          projectScreen.dataset.layout = isCaseStudy ? "case-study" : isAbout ? "about" : "generic";
+          projectScreen.dataset.layout = isAbout ? "about" : "generic";
         }
-      }
-
-      if (genericProjectPanel) {
-        genericProjectPanel.hidden = isHome || isCaseStudy || isAbout;
-      }
-
-      if (stayaProjectPanel) {
-        stayaProjectPanel.hidden = !isStaya;
-      }
-
-      if (yandexProjectPanel) {
-        yandexProjectPanel.hidden = !isYandex;
-      }
-
-      if (alrosaProjectPanel) {
-        alrosaProjectPanel.hidden = !isAlrosa;
-      }
-
-      if (ddbProjectPanel) {
-        ddbProjectPanel.hidden = !isDdb;
-      }
-
-      if (bbdoProjectPanel) {
-        bbdoProjectPanel.hidden = !isBbdo;
-      }
-
-      if (personalProjectPanel) {
-        personalProjectPanel.hidden = !isPersonal;
       }
 
       if (aboutProjectPanel) {
@@ -1265,7 +1156,6 @@ document.addEventListener("DOMContentLoaded", () => {
         projectScreen.dataset.project = view === "home" ? "" : view;
       }
 
-      syncProjectContent(view);
       syncProjectPanels(view);
       hydratePanelMedia(projectPanelsByView.get(view));
       syncProjectMedia(view);
