@@ -1912,6 +1912,10 @@ body[data-theme="dark"] .avatar-bubble__content {
   animation-delay: 220ms;
 }
 
+.hero__line--with-stack .hero__line-copy:only-child {
+  animation-delay: 80ms;
+}
+
 .hero__stack-slot {
   width: 1.08em;
   height: 0.92em;
@@ -3000,8 +3004,8 @@ body[data-view="about"] .project-screen {
 
   .hero__title {
     margin-top: 14px;
-    width: min(100%, 17ch);
-    font-size: clamp(1.9rem, 1.7vw + 1.52rem, 2.28rem);
+    width: 100%;
+    font-size: clamp(1.72rem, 2.2vw + 1.25rem, 2.05rem);
     line-height: 0.93;
     letter-spacing: -0.03em;
   }
