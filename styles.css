@@ -2210,6 +2210,11 @@ body[data-theme="dark"] .about-screen__cta-badge-icon--github {
   letter-spacing: -0.012em;
 }
 
+.about-screen__paragraph--origin {
+  max-width: 55ch;
+  color: color-mix(in srgb, var(--page-fg) 92%, transparent);
+}
+
 .about-screen__type-line {
   position: relative;
   display: block;
